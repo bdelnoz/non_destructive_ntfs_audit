@@ -1,0 +1,6 @@
+[2025-11-09T12:26:28Z] Script: non_destructive_ntfs_audit.sh V1.0
+[2025-11-09T12:26:28Z] Device: /dev/sdc
+[2025-11-09T12:26:28Z] Mountpoint: /mnt/TOSHIBA
+[2025-11-09T12:26:28Z] Simulate: false
+[2025-11-09T12:26:28Z] Write test: false
+[2025-11-09T12:26:28Z] Hash first MB: 100 MiB

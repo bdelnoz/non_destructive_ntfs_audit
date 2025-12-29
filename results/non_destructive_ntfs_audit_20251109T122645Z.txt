@@ -1,0 +1,251 @@
+=== Non-destructive NTFS audit report - 20251109T122645Z ===
+Device: /dev/sdc
+Mountpoint: /mnt/TOSHIBA
+Simulate: false
+Write test allowed: false
+NAME   FSTYPE FSVER LABEL       UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+sdc                                                                                 
+└─sdc1 ntfs         TOSHIBA EXT 9A48A03248A00F57                                    
+/dev/sdc: PTUUID="9bdfc78c-b0f2-4b3c-a8d6-53d86423cbd9" PTTYPE="gpt"
+Disk /dev/sdc: 2,73 TiB, 3000592979968 bytes, 5860533164 sectors
+Disk model: External USB 3.0
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: 9BDFC78C-B0F2-4B3C-A8D6-53D86423CBD9
+
+Device      Start        End    Sectors  Size Type
+/dev/sdc1  264192 5860532223 5860268032  2,7T Microsoft basic data
+Model: ATA SSD 512GB (scsi)
+Disk /dev/sda: 512GB
+Sector size (logical/physical): 512B/512B
+Partition Table: gpt
+Disk Flags: 
+
+Number  Start   End     Size    File system  Name           Flags
+ 1      1049kB  1024MB  1023MB  fat32        bootfat32efi   boot, esp
+ 2      1024MB  2049MB  1024MB  ext4         boot
+ 3      2049MB  111GB   109GB                RootPartition
+ 4      111GB   111GB   105MB   fat32        EFI            boot, esp, no_automount
+ 5      111GB   111GB   16,8MB               Micr           msftres, no_automount
+ 6      111GB   216GB   105GB                data1
+ 7      216GB   217GB   1074MB               data_1g        diag
+ 8      217GB   223GB   5243MB  fat32        IsoHirenBCD    msftdata
+ 9      223GB   310GB   87,4GB               data3
+10      310GB   394GB   83,9GB               data2
+11      394GB   395GB   1075MB  ext4         pocdoc_1g
+12      395GB   512GB   117GB   ext4         pocrun_109g
+
+
+Model: ATA SAMSUNG HM320II (scsi)
+Disk /dev/sdb: 320GB
+Sector size (logical/physical): 512B/512B
+Partition Table: gpt
+Disk Flags: 
+
+Number  Start   End    Size    File system  Name            Flags
+ 1      1049kB  231GB  231GB                local-xfs-215g
+ 2      231GB   287GB  55,6GB  ext4         local-ext4-51g
+ 3      287GB   320GB  33,6GB               local-swap-32g  swap
+
+
+Model: TOSHIBA External USB 3.0 (scsi)
+Disk /dev/sdc: 3001GB
+Sector size (logical/physical): 512B/4096B
+Partition Table: gpt
+Disk Flags: 
+
+Number  Start  End     Size    File system  Name                  Flags
+ 1      135MB  3001GB  3000GB  ntfs         Basic data partition  msftdata
+
+
+Model: Linux device-mapper (crypt) (dm)
+Disk /dev/mapper/data3: 87,4GB
+Sector size (logical/physical): 512B/512B
+Partition Table: loop
+Disk Flags: 
+
+Number  Start  End     Size    File system  Flags
+ 1      0,00B  87,4GB  87,4GB  ext4
+
+
+Model: Linux device-mapper (crypt) (dm)
+Disk /dev/mapper/data2: 83,9GB
+Sector size (logical/physical): 512B/512B
+Partition Table: loop
+Disk Flags: 
+
+Number  Start  End     Size    File system  Flags
+ 1      0,00B  83,9GB  83,9GB  ext4
+
+
+Model: Linux device-mapper (crypt) (dm)
+Disk /dev/mapper/data1: 105GB
+Sector size (logical/physical): 512B/512B
+Partition Table: loop
+Disk Flags: 
+
+Number  Start  End    Size   File system  Flags
+ 1      0,00B  105GB  105GB  ext4
+
+
+Model: Linux device-mapper (linear) (dm)
+Disk /dev/mapper/casablanca--vg-swap_1: 5117MB
+Sector size (logical/physical): 512B/512B
+Partition Table: loop
+Disk Flags: 
+
+Number  Start  End     Size    File system     Flags
+ 1      0,00B  5117MB  5117MB  linux-swap(v1)
+
+
+Model: Linux device-mapper (linear) (dm)
+Disk /dev/mapper/casablanca--vg-root: 94,9GB
+Sector size (logical/physical): 512B/512B
+Partition Table: loop
+Disk Flags: 
+
+Number  Start  End     Size    File system  Flags
+ 1      0,00B  94,9GB  94,9GB  ext4
+
+
+                                                                          Model: Linux device-mapper (crypt) (dm)
+Disk /dev/mapper/nvme0n1p3_crypt: 109GB
+Sector size (logical/physical): 512B/512B
+Partition Table: unknown
+Disk Flags: 
+
+00000000  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+*
+000001b0  00 00 00 00 00 00 00 00  80 ea 65 74 00 00 00 00  |..........et....|
+000001c0  02 00 ee ff ff ff 01 00  00 00 ff ff ff ff 00 00  |................|
+000001d0  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+*
+000001f0  00 00 00 00 00 00 00 00  00 00 00 00 00 00 55 aa  |..............U.|
+00000200  45 46 49 20 50 41 52 54  00 00 01 00 5c 00 00 00  |EFI PART....\...|
+00000210  97 d6 8f d0 00 00 00 00  01 00 00 00 00 00 00 00  |................|
+00000220  ab a3 50 5d 01 00 00 00  22 00 00 00 00 00 00 00  |..P]....".......|
+00000230  8a a3 50 5d 01 00 00 00  8c c7 df 9b f2 b0 3c 4b  |..P]..........<K|
+00000240  a8 d6 53 d8 64 23 cb d9  02 00 00 00 00 00 00 00  |..S.d#..........|
+00000250  80 00 00 00 80 00 00 00  52 9c 60 8a 00 00 00 00  |........R.`.....|
+00000260  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+*
+00000400  a2 a0 d0 eb e5 b9 33 44  87 c0 68 b6 b7 26 99 c7  |......3D..h..&..|
+00000410  b2 4e 49 c5 37 89 1a 46  b3 e0 b3 60 b6 60 a5 14  |.NI.7..F...`.`..|
+00000420  00 08 04 00 00 00 00 00  ff 9f 50 5d 01 00 00 00  |..........P]....|
+00000430  00 00 00 00 00 00 00 00  42 00 61 00 73 00 69 00  |........B.a.s.i.|
+00000440  63 00 20 00 64 00 61 00  74 00 61 00 20 00 70 00  |c. .d.a.t.a. .p.|
+00000450  61 00 72 00 74 00 69 00  74 00 69 00 6f 00 6e 00  |a.r.t.i.t.i.o.n.|
+00000460  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+*
+00100000
+smartctl 7.5 2025-04-30 r5714 [x86_64-linux-6.12.38+deb13-amd64] (local build)
+Copyright (C) 2002-25, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Model Family:     Toshiba 2.5" HDD MQ03UBB...
+Device Model:     TOSHIBA MQ03UBB300
+Serial Number:    Y8KCT19PT
+LU WWN Device Id: 0 000000 000000000
+Firmware Version: JP050U
+User Capacity:    3.000.592.982.016 bytes [3,00 TB]
+Sector Sizes:     512 bytes logical, 4096 bytes physical
+Rotation Rate:    5400 rpm
+Form Factor:      2.5 inches
+Device is:        In smartctl database 7.5/5706
+ATA Version is:   ATA8-ACS (minor revision not indicated)
+SATA Version is:  SATA 3.0, 3.0 Gb/s (current: 3.0 Gb/s)
+Local Time is:    Sun Nov  9 13:26:55 2025 CET
+SMART support is: Available - device has SMART capability.
+SMART support is: Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Status not supported: Incomplete response, ATA output registers missing
+SMART overall-health self-assessment test result: PASSED
+Warning: This result is based on an Attribute check.
+
+General SMART Values:
+Offline data collection status:  (0x00)	Offline data collection activity
+					was never started.
+					Auto Offline Data Collection: Disabled.
+Self-test execution status:      (  23)	The self-test routine was aborted by
+					the host.
+Total time to complete Offline 
+data collection: 		(  120) seconds.
+Offline data collection
+capabilities: 			 (0x5b) SMART execute Offline immediate.
+					Auto Offline data collection on/off support.
+					Suspend Offline collection upon new
+					command.
+					Offline surface scan supported.
+					Self-test supported.
+					No Conveyance Self-test supported.
+					Selective Self-test supported.
+SMART capabilities:            (0x0003)	Saves SMART data before entering
+					power-saving mode.
+					Supports SMART auto save timer.
+Error logging capability:        (0x01)	Error logging supported.
+					General Purpose Logging supported.
+Short self-test routine 
+recommended polling time: 	 (   2) minutes.
+Extended self-test routine
+recommended polling time: 	 ( 485) minutes.
+SCT capabilities: 	       (0x003d)	SCT Status supported.
+					SCT Error Recovery Control supported.
+					SCT Feature Control supported.
+					SCT Data Table supported.
+
+SMART Attributes Data Structure revision number: 16
+Vendor Specific SMART Attributes with Thresholds:
+ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
+  1 Raw_Read_Error_Rate     0x000b   100   100   050    Pre-fail  Always       -       0
+  2 Throughput_Performance  0x0005   100   100   050    Pre-fail  Offline      -       0
+  3 Spin_Up_Time            0x0027   100   100   001    Pre-fail  Always       -       5384
+  4 Start_Stop_Count        0x0032   100   100   000    Old_age   Always       -       1280
+  5 Reallocated_Sector_Ct   0x0033   100   100   050    Pre-fail  Always       -       0
+  7 Seek_Error_Rate         0x000b   100   100   050    Pre-fail  Always       -       0
+  8 Seek_Time_Performance   0x0005   100   100   050    Pre-fail  Offline      -       0
+  9 Power_On_Hours          0x0032   099   099   000    Old_age   Always       -       499
+ 10 Spin_Retry_Count        0x0033   125   100   030    Pre-fail  Always       -       0
+ 12 Power_Cycle_Count       0x0032   100   100   000    Old_age   Always       -       303
+191 G-Sense_Error_Rate      0x0032   100   100   000    Old_age   Always       -       87
+192 Power-Off_Retract_Count 0x0032   100   100   000    Old_age   Always       -       74
+193 Load_Cycle_Count        0x0032   100   100   000    Old_age   Always       -       2558
+194 Temperature_Celsius     0x0022   100   100   000    Old_age   Always       -       24 (Min/Max 12/49)
+196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       0
+197 Current_Pending_Sector  0x0032   100   100   000    Old_age   Always       -       0
+198 Offline_Uncorrectable   0x0030   100   100   000    Old_age   Offline      -       0
+199 UDMA_CRC_Error_Count    0x0032   200   200   000    Old_age   Always       -       0
+220 Disk_Shift              0x0002   100   100   000    Old_age   Always       -       0
+222 Loaded_Hours            0x0032   100   100   000    Old_age   Always       -       212
+223 Load_Retry_Count        0x0032   100   100   000    Old_age   Always       -       0
+224 Load_Friction           0x0022   100   100   000    Old_age   Always       -       0
+226 Load-in_Time            0x0026   100   100   000    Old_age   Always       -       274
+240 Head_Flying_Hours       0x0001   100   100   001    Pre-fail  Offline      -       0
+
+SMART Error Log Version: 1
+No Errors Logged
+
+SMART Self-test log structure revision number 1
+Num  Test_Description    Status                  Remaining  LifeTime(hours)  LBA_of_first_error
+# 1  Short offline       Aborted by host               70%       171         -
+# 2  Short offline       Completed without error       00%       171         -
+
+SMART Selective self-test log data structure revision number 1
+ SPAN  MIN_LBA  MAX_LBA  CURRENT_TEST_STATUS
+    1        0        0  Not_testing
+    2        0        0  Not_testing
+    3        0        0  Not_testing
+    4        0        0  Not_testing
+    5        0        0  Not_testing
+Selective self-test flags (0x0):
+  After scanning selected spans, do NOT read-scan remainder of disk.
+If Selective self-test is pending on power-up, resume after 0 minute delay.
+
+The above only provides legacy SMART information - try 'smartctl -x' for more
+
+c35b137289d7347e829e4c5c62635a0cb96988c6f2a63b303116d8b87bdd0713  -
+\n--- Logs: ./logs/non_destructive_ntfs_audit_20251109T122645Z.log ---
+--- Results: ./results/non_destructive_ntfs_audit_20251109T122645Z.txt ---
+Script completed safely.

@@ -1,0 +1,16 @@
+=== Non-destructive NTFS audit report - 20251109T122536Z ===
+Device: /dev/sdc
+Mountpoint: /mnt/TOSHIBA
+Simulate: true
+Write test allowed: false
+NAME   FSTYPE FSVER LABEL       UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+sdc                                                                                 
+└─sdc1 ntfs         TOSHIBA EXT 9A48A03248A00F57                                    
+smartctl 7.5 2025-04-30 r5714 [x86_64-linux-6.12.38+deb13-amd64] (local build)
+Copyright (C) 2002-25, Bruce Allen, Christian Franke, www.smartmontools.org
+
+Smartctl open device: /dev/sdc [SAT] failed: Permission denied
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  -
+\n--- Logs: ./logs/non_destructive_ntfs_audit_20251109T122536Z.log ---
+--- Results: ./results/non_destructive_ntfs_audit_20251109T122536Z.txt ---
+Script completed safely.
